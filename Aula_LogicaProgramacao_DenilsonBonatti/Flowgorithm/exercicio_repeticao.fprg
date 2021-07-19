@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ana Elisa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-15 12:16:05 "/>
+        <attribute name="created" value="QW5hIEVsaXNhO0FOQUVMSVNBOzIwMjEtMDctMTU7IjExOjEyOjQ0ICI7MjU1OA=="/>
+        <attribute name="edited" value="QW5hIEVsaXNhO0FOQUVMSVNBOzIwMjEtMDctMTU7IjEyOjE2OjA1ICI7MTsyNjY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite, produto" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="limite" expression="10"/>
+            <while expression="numero&lt;=limite">
+                <assign variable="produto" expression="numero * 9"/>
+                <output expression="&quot;9 * &quot; &amp; numero &amp; &quot; = &quot; &amp; produto" newline="True"/>
+                <assign variable="numero" expression="numero + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

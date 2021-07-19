@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ana Elisa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-15 10:50:21 "/>
+        <attribute name="created" value="QW5hIEVsaXNhO0FOQUVMSVNBOzIwMjEtMDctMTU7IjA5OjQ3OjMwICI7MjU2OA=="/>
+        <attribute name="edited" value="QW5hIEVsaXNhO0FOQUVMSVNBOzIwMjEtMDctMTU7IjEwOjUwOjIxICI7NDsyNjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media, adicional" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;parab&#233;ns, voc&#234; ter&#225; um adicional de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;voc&#234; nao bateu sua meta, ter&#225; somente um adiconal de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
